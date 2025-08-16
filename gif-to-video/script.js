@@ -1,0 +1,2 @@
+function previewGif(){ const f=document.getElementById('gif').files[0]; const r=document.getElementById('result'); r.innerHTML=''; if(!f){ alert('Select GIF'); return;} const img=document.createElement('img'); img.src=URL.createObjectURL(f); img.onload=()=>URL.revokeObjectURL(img.src); r.appendChild(img);}
+function convert(){ alert('Converting GIF to MP4 requires server-side processing (ffmpeg). This UI is ready: upload file to your server and return MP4 download link.');}

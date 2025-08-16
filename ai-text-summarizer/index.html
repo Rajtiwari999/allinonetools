@@ -1,0 +1,12 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI Text Summarizer</title><link rel="stylesheet" href="style.css"><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"></head><body>
+<div class="tool-card">
+  <h1><i class="fa-solid fa-quote-left"></i> Text Summarizer</h1>
+  <textarea id="src" placeholder="Paste long text here..."></textarea>
+  <div class="input-group">
+    <input id="sentences" type="number" placeholder="Number of sentences" value="3">
+    <button onclick="summarize()">Summarize</button>
+  </div>
+  <div class="result" id="result">Summary will appear here</div>
+</div>
+<script src="script.js"></script>
+</body></html>

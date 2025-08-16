@@ -1,0 +1,6 @@
+body{font-family:Segoe UI;background:linear-gradient(135deg,#ede7f6,#e8eaf6);min-height:100vh;display:flex;align-items:center;justify-content:center;margin:0;padding:18px}
+.tool-card{background:#fff;padding:20px;border-radius:12px;width:420px;box-shadow:0 10px 22px rgba(0,0,0,.12)}
+.input-group{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+input[type=number]{padding:8px;border-radius:8px;border:1px solid #eee;width:90px}
+button{background:#6a1b9a;color:#fff;padding:10px;border-radius:8px;border:0;cursor:pointer}
+.result{margin-top:10px;background:#f3e5ff;padding:10px;border-radius:8px}

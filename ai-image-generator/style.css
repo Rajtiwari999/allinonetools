@@ -1,0 +1,10 @@
+body{font-family:Segoe UI, sans-serif;background:linear-gradient(135deg,#fce4ec,#e1f5fe);min-height:100vh;display:flex;align-items:center;justify-content:center;margin:0;padding:20px}
+.tool-card{background:#fff;padding:26px;border-radius:16px;box-shadow:0 12px 30px rgba(0,0,0,.12);width:460px}
+h1{color:#6a1b9a;margin-bottom:10px}
+textarea{width:100%;min-height:90px;padding:12px;border-radius:10px;border:1px solid #e0e0e0;margin-bottom:10px}
+.input-group{display:flex;gap:8px}
+select,button{padding:10px;border-radius:10px;border:0}
+button{background:#6a1b9a;color:#fff;cursor:pointer}
+.result{margin-top:12px;background:#faf5ff;padding:10px;border-radius:10px}
+img.gen{max-width:100%;border-radius:8px}
+@media(max-width:480px){.tool-card{width:100%}}

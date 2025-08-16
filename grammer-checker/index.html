@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Grammar Checker</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="tool-card">
+    <div class="tool-header">
+      <i class="fa-solid fa-spell-check tool-icon"></i>
+      <div>
+        <h1>Grammar Checker</h1>
+        <p class="subtitle">Quick grammar & punctuation checks + simple auto-fixes</p>
+      </div>
+    </div>
+
+    <textarea id="inputText" placeholder="Paste or type your text here..."></textarea>
+
+    <div class="controls">
+      <select id="mode">
+        <option value="quick">Quick Check (fast)</option>
+        <option value="auto">Auto-fix (basic)</option>
+      </select>
+      <button id="checkBtn"><i class="fa-solid fa-magnifying-glass"></i> Check</button>
+      <button id="fixBtn" class="muted"><i class="fa-solid fa-magic"></i> Auto-Fix</button>
+      <button id="copyBtn" class="muted"><i class="fa-solid fa-copy"></i> Copy</button>
+    </div>
+
+    <div class="result" id="result">
+      <div id="summary">No checks run yet.</div>
+      <ul id="issues"></ul>
+    </div>
+
+    <details class="notes">
+      <summary>How it works</summary>
+      <p>This tool runs client-side, finds common issues (double spaces, repeated words, capitalization, missing punctuation). For advanced rewriting or deep grammar fixes, you can later connect to an API (LanguageTool / GPT) — the UI is ready for that.</p>
+    </details>
+  </div>
+</body>
+</html>

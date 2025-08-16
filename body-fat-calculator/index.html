@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Body Fat Calculator</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<div class="tool-card">
+  <h1><i class="fas fa-dumbbell"></i> Body Fat Calculator</h1>
+  <div class="input-group">
+    <input type="number" id="weight" placeholder="Weight (kg)">
+    <input type="number" id="waist" placeholder="Waist Circumference (cm)">
+    <input type="number" id="hip" placeholder="Hip Circumference (cm)">
+    <input type="number" id="wrist" placeholder="Wrist Circumference (cm)">
+    <select id="gender">
+      <option value="" disabled selected>Select Gender</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+    </select>
+    <button onclick="calculateBodyFat()">Calculate Body Fat</button>
+  </div>
+  <div class="result" id="result">Enter your measurements to calculate body fat</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

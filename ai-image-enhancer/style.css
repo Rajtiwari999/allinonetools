@@ -1,0 +1,10 @@
+body{font-family:Segoe UI, sans-serif;background:linear-gradient(135deg,#e0f7fa,#e1bee7);min-height:100vh;display:flex;align-items:center;justify-content:center;margin:0;padding:20px}
+.tool-card{background:#fff;padding:26px;border-radius:16px;box-shadow:0 12px 30px rgba(0,0,0,.15);width:420px;text-align:center}
+h1{color:#00695c;margin-bottom:14px}
+.input-group{display:flex;flex-direction:column;gap:10px}
+input[type=file], select{padding:10px;border-radius:10px;border:1px solid #ddd}
+button{padding:12px;border-radius:10px;border:none;background:#00695c;color:#fff;cursor:pointer}
+button:hover{background:#005048}
+.result{margin-top:14px;background:#f1f8f6;padding:12px;border-radius:10px}
+img.preview{max-width:100%;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,.08)}
+@media(max-width:480px){.tool-card{width:100%}}

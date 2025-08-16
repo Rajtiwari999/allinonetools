@@ -1,0 +1,6 @@
+body{font-family:Segoe UI;background:linear-gradient(135deg,#f3e5f5,#e8f5e9);min-height:100vh;display:flex;align-items:center;justify-content:center;margin:0;padding:20px}
+.tool-card{background:#fff;padding:22px;border-radius:14px;width:480px;box-shadow:0 10px 24px rgba(0,0,0,.12)}
+h1{color:#6a1b9a;margin-bottom:10px}
+input,select{width:100%;padding:10px;border-radius:8px;border:1px solid #eee;margin-bottom:8px}
+button{background:#6a1b9a;color:#fff;padding:10px;border-radius:8px;border:0;cursor:pointer}
+.result{margin-top:12px;background:#f8f0ff;padding:12px;border-radius:8px}

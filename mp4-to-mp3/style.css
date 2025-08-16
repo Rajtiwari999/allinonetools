@@ -1,0 +1,5 @@
+body{font-family:Segoe UI;background:linear-gradient(135deg,#e1f5fe,#f3e5f5);min-height:100vh;display:flex;align-items:center;justify-content:center;margin:0;padding:18px}
+.tool-card{background:#fff;padding:20px;border-radius:12px;width:460px;box-shadow:0 10px 22px rgba(0,0,0,.12)}
+input{width:100%;padding:10px;border-radius:8px;border:1px solid #eee;margin-bottom:8px}
+button{background:#0288d1;color:#fff;padding:10px;border-radius:8px;border:0;cursor:pointer}
+.result audio{width:100%}

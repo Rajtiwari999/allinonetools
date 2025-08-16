@@ -1,0 +1,96 @@
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg,#667eea,#764ba2);
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+}
+
+.tool-card{
+  width:100%;
+  max-width:760px;
+  background:#fff;
+  border-radius:16px;
+  padding:22px;
+  box-shadow:0 12px 30px rgba(0,0,0,0.18);
+  transition:transform .25s;
+}
+.tool-card:hover{ transform:translateY(-6px); }
+
+.tool-header{ display:flex; gap:14px; align-items:center; margin-bottom:12px;}
+.tool-icon{ font-size:36px; color:#764ba2; }
+h1{ font-size:22px; color:#222; margin-bottom:4px;}
+.subtitle{ font-size:13px; color:#666; }
+
+textarea{
+  width:100%;
+  min-height:160px;
+  padding:14px;
+  border-radius:10px;
+  border:1px solid #e0e0e0;
+  font-size:15px;
+  line-height:1.5;
+  margin:10px 0 14px 0;
+  resize: vertical;
+}
+
+.controls{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-bottom:14px;
+  align-items:center;
+}
+
+select{
+  padding:10px;
+  border-radius:10px;
+  border:1px solid #ddd;
+  font-size:14px;
+  background:#fff;
+}
+
+button{
+  background:#667eea;
+  color:#fff;
+  border:none;
+  padding:10px 14px;
+  border-radius:10px;
+  cursor:pointer;
+  font-size:14px;
+  display:inline-flex;
+  gap:8px;
+  align-items:center;
+  transition:transform .14s, background .14s;
+}
+button:hover{ transform:translateY(-3px); background:#5a67d8; }
+
+button.muted{
+  background:#f3f4f6;
+  color:#222;
+  border:1px solid #e6e7ea;
+}
+button.muted:hover{ background:#e9edf9; transform:translateY(-3px); }
+
+.result{
+  background:#f7f7ff;
+  padding:14px;
+  border-radius:10px;
+  border:1px solid #eee;
+  margin-top:6px;
+}
+
+#summary{ font-weight:700; color:#2b2b2b; margin-bottom:8px; }
+#issues{ margin-left:18px; margin-top:6px; color:#333; }
+#issues li{ margin:6px 0; padding:6px 8px; background:#fff; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.03); }
+
+.notes{ margin-top:12px; font-size:13px; color:#555; background:transparent; border:none; }
+
+@media (max-width:640px){
+  .tool-card{ padding:16px;}
+  .tool-icon{ font-size:32px;}
+  textarea{ min-height:140px;}
+}

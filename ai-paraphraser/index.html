@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI Paraphraser</title><link rel="stylesheet" href="style.css"><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"></head><body>
+<div class="tool-card">
+  <h1><i class="fa-solid fa-pen-fancy"></i> AI Paraphraser</h1>
+  <textarea id="source" placeholder="Paste text to paraphrase..."></textarea>
+  <div class="input-group">
+    <select id="tone"><option>Neutral</option><option>Formal</option><option>Casual</option></select>
+    <button onclick="paraphrase()">Paraphrase</button>
+  </div>
+  <div class="result" id="result">Paraphrased text will appear here</div>
+</div>
+<script src="script.js"></script>
+</body></html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ovulation Calculator</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<div class="tool-card">
+  <h1><i class="fas fa-venus"></i> Ovulation Calculator</h1>
+  <div class="input-group">
+    <label for="cycle">Cycle Length (days):</label>
+    <input type="number" id="cycle" placeholder="e.g., 28">
+    <label for="lastPeriod">First Day of Last Period:</label>
+    <input type="date" id="lastPeriod">
+    <button onclick="calculateOvulation()">Calculate Ovulation</button>
+  </div>
+  <div class="result" id="result">Enter your cycle info to find ovulation dates</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

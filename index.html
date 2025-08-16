@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>All-In-One Tools — Dashboard</title>
+
+  <!-- Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Main Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <div class="brand">
+        <div class="logo">🔧</div>
+        <div>
+          <h1>All-In-One Tools</h1>
+          <p class="tag">Free utilities — images, pdfs, calculators & AI helpers</p>
+        </div>
+      </div>
+
+      <div class="top-actions">
+        <div class="search-wrap">
+          <input id="searchInput" type="search" placeholder="Search tools (eg: pdf, image, bmi)..." />
+          <button id="clearSearch" title="Clear"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <button id="themeToggle" class="icon-btn" title="Toggle theme">
+          <i id="themeIcon" class="fa-regular fa-moon"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <h2>All tools in one place</h2>
+      <p>Click any card to open the tool. Build locally first — when all tested, push to GitHub and enable GitHub Pages for free hosting.</p>
+    </section>
+
+    <section id="toolsGrid" class="grid">
+      <!-- Each card: update href to your tool's index file path inside tools/ folder -->
+      <!-- Example: tools/bmi-calculator/index.html or bmi-calculator.html depending on your structure -->
+      <!-- Put cards in the exact order you want them to appear -->
+
+      <a class="card" href="tools/ai-image-enhancer/index.html" data-name="AI Image Enhancer">
+        <div class="card-icon"><i class="fa-solid fa-mountain-sun"></i></div>
+        <h3>AI Image Enhancer</h3>
+        <p class="muted">Upscale & improve image quality (UI placeholder)</p>
+      </a>
+
+      <a class="card" href="tools/ai-image-generator/index.html" data-name="AI Image Generator">
+        <div class="card-icon"><i class="fa-solid fa-image"></i></div>
+        <h3>AI Image Generator</h3>
+        <p class="muted">Generate images from text prompts (placeholder)</p>
+      </a>
+
+      <a class="card" href="tools/ai-paraphraser/index.html" data-name="AI Paraphraser">
+        <div class="card-icon"><i class="fa-solid fa-pen-fancy"></i></div>
+        <h3>AI Paraphraser</h3>
+        <p class="muted">Quick paraphrase demo</p>
+      </a>
+
+      <a class="card" href="tools/ai-story-poem-generator/index.html" data-name="AI Story / Poem">
+        <div class="card-icon"><i class="fa-solid fa-book-open"></i></div>
+        <h3>AI Story / Poem</h3>
+        <p class="muted">Generate short stories & poems</p>
+      </a>
+
+      <a class="card" href="tools/ai-text-summarizer/index.html" data-name="AI Text Summarizer">
+        <div class="card-icon"><i class="fa-solid fa-quote-left"></i></div>
+        <h3>AI Text Summarizer</h3>
+        <p class="muted">Quick client-side summary</p>
+      </a>
+
+      <a class="card" href="tools/ai-video-script-generator/index.html" data-name="AI Video Script Generator">
+        <div class="card-icon"><i class="fa-solid fa-video"></i></div>
+        <h3>AI Video Script</h3>
+        <p class="muted">Placeholder video script generator</p>
+      </a>
+
+      <a class="card" href="tools/ai-resume-builder/index.html" data-name="AI Resume Builder">
+        <div class="card-icon"><i class="fa-solid fa-briefcase"></i></div>
+        <h3>AI Resume Builder</h3>
+        <p class="muted">Build resume templates (UI ready)</p>
+      </a>
+
+      <a class="card" href="tools/ai-paraphraser/index.html" data-name="AI Paraphraser">
+        <div class="card-icon"><i class="fa-solid fa-repeat"></i></div>
+        <h3>AI Paraphraser</h3>
+        <p class="muted">Reword & rewrite (demo)</p>
+      </a>
+
+      <a class="card" href="tools/pdf-to-word/index.html" data-name="PDF to Word Converter">
+        <div class="card-icon"><i class="fa-solid fa-file-pdf"></i></div>
+        <h3>PDF → Word</h3>
+        <p class="muted">Convert PDF to .docx</p>
+      </a>
+
+      <a class="card" href="tools/word-to-pdf/index.html" data-name="Word to PDF Converter">
+        <div class="card-icon"><i class="fa-solid fa-file-word"></i></div>
+        <h3>Word → PDF</h3>
+        <p class="muted">Convert Word to PDF</p>
+      </a>
+
+      <a class="card" href="tools/pdf-merger/index.html" data-name="PDF Merger">
+        <div class="card-icon"><i class="fa-solid fa-file-import"></i></div>
+        <h3>PDF Merger</h3>
+        <p class="muted">Merge multiple PDFs</p>
+      </a>
+
+      <a class="card" href="tools/pdf-splitter/index.html" data-name="PDF Splitter">
+        <div class="card-icon"><i class="fa-solid fa-file-export"></i></div>
+        <h3>PDF Splitter</h3>
+        <p class="muted">Split PDF pages</p>
+      </a>
+
+      <a class="card" href="tools/pdf-compressor/index.html" data-name="PDF Compressor">
+        <div class="card-icon"><i class="fa-solid fa-compress-alt"></i></div>
+        <h3>PDF Compressor</h3>
+        <p class="muted">Reduce PDF size</p>
+      </a>
+
+      <a class="card" href="tools/pdf-to-jpg/index.html" data-name="PDF to JPG Converter">
+        <div class="card-icon"><i class="fa-solid fa-file-image"></i></div>
+        <h3>PDF → JPG</h3>
+        <p class="muted">Export PDF pages as images</p>
+      </a>
+
+      <a class="card" href="tools/pdf-to-text/index.html" data-name="PDF to Text">
+        <div class="card-icon"><i class="fa-solid fa-file-lines"></i></div>
+        <h3>PDF → Text</h3>
+        <p class="muted">Extract text from PDFs</p>
+      </a>
+
+      <a class="card" href="tools/age-calculator/index.html" data-name="Age Calculator">
+        <div class="card-icon"><i class="fa-solid fa-cake-candles"></i></div>
+        <h3>Age Calculator</h3>
+        <p class="muted">Calculate your age</p>
+      </a>
+
+      <a class="card" href="tools/bmi-calculator/index.html" data-name="BMI Calculator">
+        <div class="card-icon"><i class="fa-solid fa-weight-scale"></i></div>
+        <h3>BMI Calculator</h3>
+        <p class="muted">Body mass index checker</p>
+      </a>
+
+      <a class="card" href="tools/loan-emi-calculator/index.html" data-name="Loan EMI Calculator">
+        <div class="card-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+        <h3>Loan EMI</h3>
+        <p class="muted">EMI & schedule</p>
+      </a>
+
+      <a class="card" href="tools/gst-calculator/index.html" data-name="GST Calculator">
+        <div class="card-icon"><i class="fa-solid fa-percent"></i></div>
+        <h3>GST Calculator</h3>
+        <p class="muted">GST amount & total</p>
+      </a>
+
+      <a class="card" href="tools/currency-converter/index.html" data-name="Currency Converter">
+        <div class="card-icon"><i class="fa-solid fa-dollar-sign"></i></div>
+        <h3>Currency Converter</h3>
+        <p class="muted">Quick currency conversions</p>
+      </a>
+
+      <a class="card" href="tools/unit-converter/index.html" data-name="Unit Converter">
+        <div class="card-icon"><i class="fa-solid fa-ruler"></i></div>
+        <h3>Unit Converter</h3>
+        <p class="muted">Length, weight, volume etc.</p>
+      </a>
+
+      <a class="card" href="tools/sleep-planner/index.html" data-name="Sleep Planner">
+        <div class="card-icon"><i class="fa-solid fa-bed"></i></div>
+        <h3>Sleep Planner</h3>
+        <p class="muted">Find best bedtimes</p>
+      </a>
+
+      <a class="card" href="tools/water-intake/index.html" data-name="Water Intake Calculator">
+        <div class="card-icon"><i class="fa-solid fa-tint"></i></div>
+        <h3>Water Intake</h3>
+        <p class="muted">Daily water recommendation</p>
+      </a>
+
+      <a class="card" href="tools/body-fat-calculator/index.html" data-name="Body Fat Calculator">
+        <div class="card-icon"><i class="fa-solid fa-dumbbell"></i></div>
+        <h3>Body Fat</h3>
+        <p class="muted">Estimate body fat %</p>
+      </a>
+
+      <a class="card" href="tools/ovulation-calculator/index.html" data-name="Ovulation Calculator">
+        <div class="card-icon"><i class="fa-solid fa-venus"></i></div>
+        <h3>Ovulation</h3>
+        <p class="muted">Fertility window estimate</p>
+      </a>
+
+      <a class="card" href="tools/ai-text-to-speech/index.html" data-name="AI Text to Speech">
+        <div class="card-icon"><i class="fa-solid fa-robot"></i></div>
+        <h3>AI Text to Speech</h3>
+        <p class="muted">Text → Voice (browser TTS)</p>
+      </a>
+
+      <a class="card" href="tools/mp4-to-mp3/index.html" data-name="MP4 to MP3">
+        <div class="card-icon"><i class="fa-solid fa-file-audio"></i></div>
+        <h3>MP4 → MP3</h3>
+        <p class="muted">Extract audio (UI placeholder)</p>
+      </a>
+
+      <a class="card" href="tools/video-to-gif/index.html" data-name="Video to GIF">
+        <div class="card-icon"><i class="fa-solid fa-film"></i></div>
+        <h3>Video → GIF</h3>
+        <p class="muted">Convert video to GIF (server required)</p>
+      </a>
+
+      <a class="card" href="tools/password-generator/index.html" data-name="Password Generator">
+        <div class="card-icon"><i class="fa-solid fa-key"></i></div>
+        <h3>Password Generator</h3>
+        <p class="muted">Strong password generator</p>
+      </a>
+
+      <a class="card" href="tools/word-counter/index.html" data-name="Word Counter">
+        <div class="card-icon"><i class="fa-solid fa-file-lines"></i></div>
+        <h3>Word Counter</h3>
+        <p class="muted">Words, chars & sentences</p>
+      </a>
+
+      <a class="card" href="tools/qr-code-generator/index.html" data-name="QR Code Generator">
+        <div class="card-icon"><i class="fa-solid fa-qrcode"></i></div>
+        <h3>QR Code Generator</h3>
+        <p class="muted">Generate QR codes</p>
+      </a>
+
+      <a class="card" href="tools/qr-code-scanner/index.html" data-name="QR Code Scanner">
+        <div class="card-icon"><i class="fa-solid fa-qrcode"></i></div>
+        <h3>QR Code Scanner</h3>
+        <p class="muted">Scan with camera</p>
+      </a>
+
+      <!-- add more cards below if you create more tools -->
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div>© <span id="year"></span> All-In-One Tools — Free • Made by you</div>
+      <div class="small muted">Host on GitHub Pages later, add Adsense when approved.</div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>

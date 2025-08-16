@@ -1,0 +1,10 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Image Format Converter</title><link rel="stylesheet" href="style.css"><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"></head><body>
+<div class="tool-card">
+  <h1><i class="fa-solid fa-file-image"></i> Image Format Converter</h1>
+  <input type="file" id="imgfile" accept="image/*">
+  <select id="outformat"><option value="image/png">PNG</option><option value="image/jpeg">JPG</option><option value="image/webp">WEBP</option></select>
+  <button onclick="convert()">Convert</button>
+  <div class="result" id="result">Converted image will appear here</div>
+</div>
+<script src="script.js"></script>
+</body></html>
