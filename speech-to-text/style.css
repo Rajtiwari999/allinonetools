@@ -1,0 +1,4 @@
+body{font-family:Segoe UI;background:linear-gradient(135deg,#fff3e0,#ffecb3);min-height:100vh;display:flex;align-items:center;justify-content:center;margin:0;padding:18px}
+.tool-card{background:#fff;padding:20px;border-radius:12px;width:420px;box-shadow:0 10px 22px rgba(0,0,0,.12)}
+button{background:#f57c00;color:#fff;padding:10px;border-radius:8px;border:0;cursor:pointer;margin-right:6px}
+.result{margin-top:10px;background:#fff8e1;padding:12px;border-radius:8px}

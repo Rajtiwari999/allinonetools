@@ -1,0 +1,10 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>QR Scanner</title><link rel="stylesheet" href="style.css"><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"></head><body>
+<div class="tool-card">
+  <h1><i class="fa-solid fa-qrcode"></i> QR Scanner</h1>
+  <button onclick="startScanner()">Start Camera</button>
+  <video id="video" playsinline style="width:100%;margin-top:10px;border-radius:8px"></video>
+  <div class="result" id="result">Scanned data will appear here</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.js"></script>
+<script src="script.js"></script>
+</body></html>

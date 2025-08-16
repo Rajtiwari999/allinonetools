@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unit Converter</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<div class="tool-card">
+  <h1><i class="fas fa-ruler"></i> Unit Converter</h1>
+  <div class="input-group">
+    <input type="number" id="value" placeholder="Enter value">
+    <select id="fromUnit">
+      <option value="cm">cm</option>
+      <option value="m">m</option>
+      <option value="inch">inch</option>
+    </select>
+    <select id="toUnit">
+      <option value="m">m</option>
+      <option value="cm">cm</option>
+      <option value="inch">inch</option>
+    </select>
+    <button onclick="convertUnit()">Convert</button>
+  </div>
+  <div class="result" id="result">Enter value and select units</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

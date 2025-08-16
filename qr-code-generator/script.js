@@ -1,0 +1,1 @@
+function gen(){ const t=document.getElementById('qrtext').value.trim(); const r=document.getElementById('result'); r.innerHTML=''; if(!t){ alert('Enter text'); return;} QRCode.toCanvas(t,{width:220},(err,canvas)=>{ if(err){ r.innerText='Error generating'; return;} r.appendChild(canvas);});}

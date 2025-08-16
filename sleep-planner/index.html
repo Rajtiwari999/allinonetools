@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sleep Planner</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<div class="tool-card">
+  <h1><i class="fas fa-bed"></i> Sleep Planner</h1>
+  <div class="input-group">
+    <label for="wakeTime">Select Wake-up Time:</label>
+    <input type="time" id="wakeTime">
+    <button onclick="calculateSleep()">Suggest Bedtimes</button>
+  </div>
+  <div class="result" id="result">Select wake-up time to plan your sleep cycles</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

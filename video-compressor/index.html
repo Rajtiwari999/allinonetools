@@ -1,0 +1,10 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Video Compressor</title><link rel="stylesheet" href="style.css"><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"></head><body>
+<div class="tool-card">
+  <h1><i class="fa-solid fa-compress"></i> Video Compressor</h1>
+  <input type="file" id="video" accept="video/*">
+  <select id="quality"><option>High (small compression)</option><option>Medium</option><option>Low (max compression)</option></select>
+  <button onclick="compress()">Compress</button>
+  <div class="result" id="result">Compression requires ffmpeg (server or ffmpeg.wasm). UI ready.</div>
+</div>
+<script src="script.js"></script>
+</body></html>
